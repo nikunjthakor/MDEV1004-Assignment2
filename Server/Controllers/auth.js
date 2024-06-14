@@ -48,6 +48,7 @@ function ProcessLogin(req, res, next) {
             }
             return res.json({ success: true, msg: "User Logged in successfully", data: user });
         });
+        return;
     })(req, res, next);
 }
 exports.ProcessLogin = ProcessLogin;

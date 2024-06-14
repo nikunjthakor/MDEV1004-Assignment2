@@ -1,8 +1,21 @@
+/**
+ * File name: movie.ts  //model
+ * Student Name: Nikunj Thakor 
+ * StudentID: 200555644
+ * Date: 14/06/2024
+ */
+
 //Movie Model here
 
 import { Collection, Schema, model } from 'mongoose';
 
-// Movie interface 
+
+/**
+ *Movie interface 
+ *
+ * @export
+ * @interface IMovie
+ */
 export interface IMovie 
 {
     movieID: string,
@@ -19,7 +32,12 @@ export interface IMovie
     criticsRating: number
 }
 
-// Movie schema 
+
+
+/**
+ *  Movie schema 
+ *  @type {*} 
+ * */
 let movieSchema = new Schema<IMovie>
 ({
     movieID: String,

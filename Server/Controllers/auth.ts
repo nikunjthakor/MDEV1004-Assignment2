@@ -1,3 +1,10 @@
+/**
+ * File name: auth.ts
+ * Student Name: Nikunj Thakor 
+ * StudentID: 200555644
+ * Date: 14/06/2024
+ */
+
 import { Request, Response, NextFunction } from 'express';
 import passport from 'passport';
 import mongoose from 'mongoose';
@@ -85,6 +92,7 @@ export function ProcessLogin(req:Request, res:Response, next:NextFunction): void
 
             return res.json({success: true, msg: "User Logged in successfully", data: user});
         });
+        return;
     })(req, res, next);
 }
 
